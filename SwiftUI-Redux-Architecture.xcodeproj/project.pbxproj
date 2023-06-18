@@ -11,6 +11,7 @@
 		1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683162A2A3F063500F0DFA3 /* ContentView.swift */; };
 		1683162D2A3F063600F0DFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1683162C2A3F063600F0DFA3 /* Assets.xcassets */; };
 		168316302A3F063600F0DFA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1683162F2A3F063600F0DFA3 /* Preview Assets.xcassets */; };
+		168316382A3F08CE00F0DFA3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316372A3F08CE00F0DFA3 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1683162A2A3F063500F0DFA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1683162C2A3F063600F0DFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1683162F2A3F063600F0DFA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		168316372A3F08CE00F0DFA3 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		168316272A3F063500F0DFA3 /* SwiftUI-Redux-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				168316362A3F089800F0DFA3 /* Store */,
 				168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */,
 				1683162A2A3F063500F0DFA3 /* ContentView.swift */,
 				1683162C2A3F063600F0DFA3 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				1683162F2A3F063600F0DFA3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		168316362A3F089800F0DFA3 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				168316372A3F08CE00F0DFA3 /* Store.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168316382A3F08CE00F0DFA3 /* Store.swift in Sources */,
 				1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */,
 				168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */,
 			);
