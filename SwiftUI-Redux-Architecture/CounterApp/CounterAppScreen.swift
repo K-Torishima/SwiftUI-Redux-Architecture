@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CounterAppScreen.swift
 //  SwiftUI-Redux-Architecture
 //
 //  Created by Koji Torishima on 2023/06/18.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CounterAppScreen: View {
     
-    @EnvironmentObject var store: Store
+    @EnvironmentObject var store: CounterStore
     
     struct Props {
         let counter: Int
@@ -18,7 +18,7 @@ struct ContentView: View {
         let onAdd: (Int) -> Void
     }
     
-    private func map(state: State) -> Props {
+    private func map(state: CounterState) -> Props {
         Props(
             counter: state.counter,
             onIncrement: {
@@ -29,14 +29,15 @@ struct ContentView: View {
             },
             onAdd: {
                 store.dispatch(action: AddAction(value: $0))
-            })
+            }
+        )
     }
     
     var body: some View {
         let props = map(state: store.state)
         VStack {
             Text("\(props.counter)")
-               .padding()
+                .padding()
             Button("Increment") {
                 props.onIncrement()
             }
@@ -50,10 +51,10 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CounterAppScreen_Previews: PreviewProvider {
     static var previews: some View {
-        let store = Store(reducer: reducer)
-        ContentView()
+        let store = CounterStore(reducer: reducer)
+        CounterAppScreen()
             .environmentObject(store)
     }
 }
