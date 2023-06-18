@@ -10,11 +10,11 @@ import SwiftUI
 @main
 struct SwiftUI_Redux_ArchitectureApp: App {
     
-    let store = CounterStore(reducer: reducer)
+    let store = Store(reducer: appReducer, state: AppState())
     
     var body: some Scene {
         WindowGroup {
-            CounterAppScreen()
+            ContentView()
                 .environmentObject(store)
         }
     }

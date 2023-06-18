@@ -8,25 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */; };
-		1683162B2A3F063500F0DFA3 /* CounterAppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683162A2A3F063500F0DFA3 /* CounterAppScreen.swift */; };
+		1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683162A2A3F063500F0DFA3 /* ContentView.swift */; };
 		1683162D2A3F063600F0DFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1683162C2A3F063600F0DFA3 /* Assets.xcassets */; };
 		168316302A3F063600F0DFA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1683162F2A3F063600F0DFA3 /* Preview Assets.xcassets */; };
-		168316382A3F08CE00F0DFA3 /* CounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316372A3F08CE00F0DFA3 /* CounterStore.swift */; };
-		1683163B2A3F17DC00F0DFA3 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683163A2A3F17DC00F0DFA3 /* CounterAction.swift */; };
-		1683163D2A3F17FE00F0DFA3 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683163C2A3F17FE00F0DFA3 /* Reducer.swift */; };
-		1683163F2A3F184600F0DFA3 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683163E2A3F184600F0DFA3 /* CounterState.swift */; };
+		168316382A3F08CE00F0DFA3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316372A3F08CE00F0DFA3 /* Store.swift */; };
+		1683163B2A3F17DC00F0DFA3 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683163A2A3F17DC00F0DFA3 /* Action.swift */; };
+		1683163D2A3F17FE00F0DFA3 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683163C2A3F17FE00F0DFA3 /* CounterReducer.swift */; };
+		1683163F2A3F184600F0DFA3 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683163E2A3F184600F0DFA3 /* State.swift */; };
+		168316422A3F47BE00F0DFA3 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316412A3F47BE00F0DFA3 /* AppReducer.swift */; };
+		168316452A3F510E00F0DFA3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316442A3F510E00F0DFA3 /* Task.swift */; };
+		168316472A3F518900F0DFA3 /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316462A3F518900F0DFA3 /* TaskReducer.swift */; };
+		168316492A3F545500F0DFA3 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316482A3F545500F0DFA3 /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		168316252A3F063500F0DFA3 /* SwiftUI-Redux-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Redux-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Redux_ArchitectureApp.swift; sourceTree = "<group>"; };
-		1683162A2A3F063500F0DFA3 /* CounterAppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppScreen.swift; sourceTree = "<group>"; };
+		1683162A2A3F063500F0DFA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1683162C2A3F063600F0DFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1683162F2A3F063600F0DFA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		168316372A3F08CE00F0DFA3 /* CounterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterStore.swift; sourceTree = "<group>"; };
-		1683163A2A3F17DC00F0DFA3 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
-		1683163C2A3F17FE00F0DFA3 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
-		1683163E2A3F184600F0DFA3 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		168316372A3F08CE00F0DFA3 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1683163A2A3F17DC00F0DFA3 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		1683163C2A3F17FE00F0DFA3 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		1683163E2A3F184600F0DFA3 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		168316412A3F47BE00F0DFA3 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		168316442A3F510E00F0DFA3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		168316462A3F518900F0DFA3 /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
+		168316482A3F545500F0DFA3 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */,
-				168316392A3F16CF00F0DFA3 /* CounterApp */,
 				1683162C2A3F063600F0DFA3 /* Assets.xcassets */,
+				168316432A3F50F800F0DFA3 /* Models */,
+				168316362A3F089800F0DFA3 /* Store */,
+				168316392A3F16CF00F0DFA3 /* Views */,
 				1683162E2A3F063600F0DFA3 /* Preview Content */,
 			);
 			path = "SwiftUI-Redux-Architecture";
@@ -78,21 +88,39 @@
 		168316362A3F089800F0DFA3 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				1683163E2A3F184600F0DFA3 /* CounterState.swift */,
-				168316372A3F08CE00F0DFA3 /* CounterStore.swift */,
-				1683163A2A3F17DC00F0DFA3 /* CounterAction.swift */,
-				1683163C2A3F17FE00F0DFA3 /* Reducer.swift */,
+				168316402A3F470B00F0DFA3 /* reducers */,
+				1683163E2A3F184600F0DFA3 /* State.swift */,
+				168316372A3F08CE00F0DFA3 /* Store.swift */,
+				1683163A2A3F17DC00F0DFA3 /* Action.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
 		};
-		168316392A3F16CF00F0DFA3 /* CounterApp */ = {
+		168316392A3F16CF00F0DFA3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				168316362A3F089800F0DFA3 /* Store */,
-				1683162A2A3F063500F0DFA3 /* CounterAppScreen.swift */,
+				1683162A2A3F063500F0DFA3 /* ContentView.swift */,
+				168316482A3F545500F0DFA3 /* AddTaskView.swift */,
 			);
-			path = CounterApp;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		168316402A3F470B00F0DFA3 /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+				168316412A3F47BE00F0DFA3 /* AppReducer.swift */,
+				1683163C2A3F17FE00F0DFA3 /* CounterReducer.swift */,
+				168316462A3F518900F0DFA3 /* TaskReducer.swift */,
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		168316432A3F50F800F0DFA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				168316442A3F510E00F0DFA3 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1683163F2A3F184600F0DFA3 /* CounterState.swift in Sources */,
-				1683163B2A3F17DC00F0DFA3 /* CounterAction.swift in Sources */,
-				168316382A3F08CE00F0DFA3 /* CounterStore.swift in Sources */,
-				1683162B2A3F063500F0DFA3 /* CounterAppScreen.swift in Sources */,
+				168316452A3F510E00F0DFA3 /* Task.swift in Sources */,
+				168316492A3F545500F0DFA3 /* AddTaskView.swift in Sources */,
+				1683163F2A3F184600F0DFA3 /* State.swift in Sources */,
+				1683163B2A3F17DC00F0DFA3 /* Action.swift in Sources */,
+				168316422A3F47BE00F0DFA3 /* AppReducer.swift in Sources */,
+				168316472A3F518900F0DFA3 /* TaskReducer.swift in Sources */,
+				168316382A3F08CE00F0DFA3 /* Store.swift in Sources */,
+				1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */,
 				168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */,
-				1683163D2A3F17FE00F0DFA3 /* Reducer.swift in Sources */,
+				1683163D2A3F17FE00F0DFA3 /* CounterReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
