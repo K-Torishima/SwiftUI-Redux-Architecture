@@ -59,7 +59,7 @@ struct ContentView: View {
             
             Spacer()
          
-            Button("Add Task") {
+            Button("Add Todo") {
                 isPresented = true
             }
             Spacer()

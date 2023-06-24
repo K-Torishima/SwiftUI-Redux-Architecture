@@ -14,9 +14,9 @@ struct AddTaskView: View {
     
     struct Props {
         // props
-        let tasks: [Task]
+        let tasks: [Todo]
         // dispatch
-        var onTaskAdded: (Task) -> Void
+        var onTaskAdded: (Todo) -> Void
     }
     
     private func map(state: TaskState) -> Props {
@@ -38,7 +38,7 @@ struct AddTaskView: View {
             TextField("Enter task", text: $name)
                 .textFieldStyle(.roundedBorder)
             Button("Add") {
-                let task = Task(title: self.name)
+                let task = Todo(title: self.name)
                 props.onTaskAdded(task)
             }
             List(props.tasks, id: \.id) { task in

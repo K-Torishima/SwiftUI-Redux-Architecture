@@ -15,7 +15,7 @@ struct AppState: ReduxState {
 }
 
 struct TaskState: ReduxState {
-    var tasks: [Task] = []
+    var tasks: [Todo] = []
 }
 
 struct CounterState: ReduxState {

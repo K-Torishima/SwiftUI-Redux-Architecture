@@ -15,7 +15,7 @@ struct DecrementAction: Action {}
 // actionを定義
 struct AddTaskAction: Action {
     // そのアクションで振る舞うデータを定義
-    let task: Task
+    let task: Todo
 }
 
 struct AddAction: Action {
