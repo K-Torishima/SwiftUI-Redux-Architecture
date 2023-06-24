@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1646CFC12A46ED4000A54574 /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFC02A46ED4000A54574 /* LogMiddleware.swift */; };
+		1646CFC32A46F0F000A54574 /* incrementMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFC22A46F0F000A54574 /* incrementMiddleware.swift */; };
 		168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */; };
 		1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683162A2A3F063500F0DFA3 /* ContentView.swift */; };
 		1683162D2A3F063600F0DFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1683162C2A3F063600F0DFA3 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1646CFC02A46ED4000A54574 /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
+		1646CFC22A46F0F000A54574 /* incrementMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incrementMiddleware.swift; sourceTree = "<group>"; };
 		168316252A3F063500F0DFA3 /* SwiftUI-Redux-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Redux-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Redux_ArchitectureApp.swift; sourceTree = "<group>"; };
 		1683162A2A3F063500F0DFA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1646CFBF2A46ED1400A54574 /* middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFC02A46ED4000A54574 /* LogMiddleware.swift */,
+				1646CFC22A46F0F000A54574 /* incrementMiddleware.swift */,
+			);
+			path = middlewares;
+			sourceTree = "<group>";
+		};
 		1683161C2A3F063500F0DFA3 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 		168316362A3F089800F0DFA3 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				1646CFBF2A46ED1400A54574 /* middlewares */,
 				168316402A3F470B00F0DFA3 /* reducers */,
 				1683163E2A3F184600F0DFA3 /* State.swift */,
 				168316372A3F08CE00F0DFA3 /* Store.swift */,
@@ -194,11 +208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				168316452A3F510E00F0DFA3 /* Task.swift in Sources */,
+				1646CFC12A46ED4000A54574 /* LogMiddleware.swift in Sources */,
 				168316492A3F545500F0DFA3 /* AddTaskView.swift in Sources */,
 				1683163F2A3F184600F0DFA3 /* State.swift in Sources */,
 				1683163B2A3F17DC00F0DFA3 /* Action.swift in Sources */,
 				168316422A3F47BE00F0DFA3 /* AppReducer.swift in Sources */,
 				168316472A3F518900F0DFA3 /* TaskReducer.swift in Sources */,
+				1646CFC32A46F0F000A54574 /* incrementMiddleware.swift in Sources */,
 				168316382A3F08CE00F0DFA3 /* Store.swift in Sources */,
 				1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */,
 				168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */,
