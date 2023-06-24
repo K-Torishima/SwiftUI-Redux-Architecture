@@ -19,10 +19,29 @@ struct SwiftUI_Redux_ArchitectureApp: App {
         ]
     )
     
+    let moviesAppStore = MoviesAppStore(
+        reducer: moviesAppResucer,
+        state: MoviesAppState(),
+        middlewares: [
+            moviesMiddleware()
+        ]
+    )
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(store)
+            TabView {
+                ContentView()
+                    .environmentObject(store)
+                    .tabItem {
+                        Text("counterApp")
+                    }
+                
+                MoviesAppView()
+                    .environmentObject(moviesAppStore)
+                    .tabItem {
+                        Text("MoviesAppView")
+                    }
+            }
         }
     }
 }

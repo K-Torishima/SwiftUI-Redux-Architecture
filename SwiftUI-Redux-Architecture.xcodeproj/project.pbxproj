@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		1646CFC12A46ED4000A54574 /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFC02A46ED4000A54574 /* LogMiddleware.swift */; };
 		1646CFC32A46F0F000A54574 /* incrementMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFC22A46F0F000A54574 /* incrementMiddleware.swift */; };
+		1646CFC92A46FA1300A54574 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFC82A46FA1300A54574 /* Movie.swift */; };
+		1646CFCC2A46FB6C00A54574 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFCB2A46FB6C00A54574 /* Webservice.swift */; };
+		1646CFD02A46FFED00A54574 /* MoviesAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFCF2A46FFED00A54574 /* MoviesAppStore.swift */; };
+		1646CFD22A46FFF800A54574 /* MoviesAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFD12A46FFF700A54574 /* MoviesAppState.swift */; };
+		1646CFD42A47000500A54574 /* MoviesAppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFD32A47000500A54574 /* MoviesAppAction.swift */; };
+		1646CFD62A4701A700A54574 /* MoviesAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFD52A4701A700A54574 /* MoviesAppReducer.swift */; };
+		1646CFD92A47030100A54574 /* MoviesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFD82A47030100A54574 /* MoviesReducer.swift */; };
+		1646CFDB2A47045D00A54574 /* MoviesMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFDA2A47045D00A54574 /* MoviesMiddleware.swift */; };
+		1646CFDD2A4709DD00A54574 /* MoviesAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CFDC2A4709DD00A54574 /* MoviesAppView.swift */; };
 		168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */; };
 		1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683162A2A3F063500F0DFA3 /* ContentView.swift */; };
 		1683162D2A3F063600F0DFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1683162C2A3F063600F0DFA3 /* Assets.xcassets */; };
@@ -26,6 +35,15 @@
 /* Begin PBXFileReference section */
 		1646CFC02A46ED4000A54574 /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
 		1646CFC22A46F0F000A54574 /* incrementMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incrementMiddleware.swift; sourceTree = "<group>"; };
+		1646CFC82A46FA1300A54574 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1646CFCB2A46FB6C00A54574 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		1646CFCF2A46FFED00A54574 /* MoviesAppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppStore.swift; sourceTree = "<group>"; };
+		1646CFD12A46FFF700A54574 /* MoviesAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppState.swift; sourceTree = "<group>"; };
+		1646CFD32A47000500A54574 /* MoviesAppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppAction.swift; sourceTree = "<group>"; };
+		1646CFD52A4701A700A54574 /* MoviesAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppReducer.swift; sourceTree = "<group>"; };
+		1646CFD82A47030100A54574 /* MoviesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesReducer.swift; sourceTree = "<group>"; };
+		1646CFDA2A47045D00A54574 /* MoviesMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesMiddleware.swift; sourceTree = "<group>"; };
+		1646CFDC2A4709DD00A54574 /* MoviesAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppView.swift; sourceTree = "<group>"; };
 		168316252A3F063500F0DFA3 /* SwiftUI-Redux-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Redux-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Redux_ArchitectureApp.swift; sourceTree = "<group>"; };
 		1683162A2A3F063500F0DFA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +89,69 @@
 			path = SampleApp;
 			sourceTree = "<group>";
 		};
+		1646CFC52A46F98900A54574 /* MoviesApp */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFC62A46F9E200A54574 /* Models */,
+				1646CFC72A46F9FA00A54574 /* Store */,
+				1646CFD72A47024F00A54574 /* Views */,
+			);
+			path = MoviesApp;
+			sourceTree = "<group>";
+		};
+		1646CFC62A46F9E200A54574 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFC82A46FA1300A54574 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1646CFC72A46F9FA00A54574 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFCE2A46FFCF00A54574 /* middlewares */,
+				1646CFCD2A46FFCC00A54574 /* reducers */,
+				1646CFD12A46FFF700A54574 /* MoviesAppState.swift */,
+				1646CFCF2A46FFED00A54574 /* MoviesAppStore.swift */,
+				1646CFD32A47000500A54574 /* MoviesAppAction.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		1646CFCA2A46FB4400A54574 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFCB2A46FB6C00A54574 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1646CFCD2A46FFCC00A54574 /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFD52A4701A700A54574 /* MoviesAppReducer.swift */,
+				1646CFD82A47030100A54574 /* MoviesReducer.swift */,
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		1646CFCE2A46FFCF00A54574 /* middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFDA2A47045D00A54574 /* MoviesMiddleware.swift */,
+			);
+			path = middlewares;
+			sourceTree = "<group>";
+		};
+		1646CFD72A47024F00A54574 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1646CFDC2A4709DD00A54574 /* MoviesAppView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1683161C2A3F063500F0DFA3 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +173,9 @@
 			children = (
 				168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */,
 				1683162C2A3F063600F0DFA3 /* Assets.xcassets */,
+				1646CFCA2A46FB4400A54574 /* Services */,
 				1646CFC42A46F95A00A54574 /* SampleApp */,
+				1646CFC52A46F98900A54574 /* MoviesApp */,
 				1683162E2A3F063600F0DFA3 /* Preview Content */,
 			);
 			path = "SwiftUI-Redux-Architecture";
@@ -215,18 +298,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1646CFD02A46FFED00A54574 /* MoviesAppStore.swift in Sources */,
 				168316452A3F510E00F0DFA3 /* Todo.swift in Sources */,
 				1646CFC12A46ED4000A54574 /* LogMiddleware.swift in Sources */,
 				168316492A3F545500F0DFA3 /* AddTaskView.swift in Sources */,
 				1683163F2A3F184600F0DFA3 /* State.swift in Sources */,
 				1683163B2A3F17DC00F0DFA3 /* Action.swift in Sources */,
+				1646CFDB2A47045D00A54574 /* MoviesMiddleware.swift in Sources */,
+				1646CFDD2A4709DD00A54574 /* MoviesAppView.swift in Sources */,
 				168316422A3F47BE00F0DFA3 /* AppReducer.swift in Sources */,
+				1646CFD22A46FFF800A54574 /* MoviesAppState.swift in Sources */,
 				168316472A3F518900F0DFA3 /* TaskReducer.swift in Sources */,
+				1646CFD42A47000500A54574 /* MoviesAppAction.swift in Sources */,
 				1646CFC32A46F0F000A54574 /* incrementMiddleware.swift in Sources */,
+				1646CFCC2A46FB6C00A54574 /* Webservice.swift in Sources */,
+				1646CFD92A47030100A54574 /* MoviesReducer.swift in Sources */,
+				1646CFC92A46FA1300A54574 /* Movie.swift in Sources */,
 				168316382A3F08CE00F0DFA3 /* Store.swift in Sources */,
 				1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */,
 				168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */,
 				1683163D2A3F17FE00F0DFA3 /* CounterReducer.swift in Sources */,
+				1646CFD62A4701A700A54574 /* MoviesAppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
