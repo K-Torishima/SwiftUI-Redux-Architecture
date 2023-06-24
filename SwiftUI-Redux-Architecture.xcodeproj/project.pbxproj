@@ -61,6 +61,16 @@
 			path = middlewares;
 			sourceTree = "<group>";
 		};
+		1646CFC42A46F95A00A54574 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				168316432A3F50F800F0DFA3 /* Models */,
+				168316362A3F089800F0DFA3 /* Store */,
+				168316392A3F16CF00F0DFA3 /* Views */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
 		1683161C2A3F063500F0DFA3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +92,7 @@
 			children = (
 				168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */,
 				1683162C2A3F063600F0DFA3 /* Assets.xcassets */,
-				168316432A3F50F800F0DFA3 /* Models */,
-				168316362A3F089800F0DFA3 /* Store */,
-				168316392A3F16CF00F0DFA3 /* Views */,
+				1646CFC42A46F95A00A54574 /* SampleApp */,
 				1683162E2A3F063600F0DFA3 /* Preview Content */,
 			);
 			path = "SwiftUI-Redux-Architecture";
