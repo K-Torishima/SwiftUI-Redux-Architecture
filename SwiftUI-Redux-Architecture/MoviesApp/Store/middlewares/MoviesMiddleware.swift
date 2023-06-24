@@ -7,6 +7,7 @@
 
 import Foundation
 
+// 処理が単調なら機能ごとにMiddleWareを実装してもいいけどどうなんだろう
 func moviesMiddleware() -> MoviesAppMiddleware<MoviesAppState> {
     
     return { state, action, dispatch in
