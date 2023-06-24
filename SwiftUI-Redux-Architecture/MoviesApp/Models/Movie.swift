@@ -17,3 +17,8 @@ struct Movie: Decodable {
     let id: String
     let title: String
 }
+
+struct MovieDetail: Decodable {
+    let title: String
+    let text: String
+}

@@ -21,6 +21,16 @@ func moviesMiddleware() -> MoviesAppMiddleware<MoviesAppState> {
                     print(error.localizedDescription)
                 }
             }
+        case let action as FetchMovieDetail:
+            Task {
+                do {
+                    try await Task.sleep(nanoseconds: NSEC_PER_SEC * 1)
+                    let detail = try await Webservice().getMoviesDetal(id: action.id)
+                    dispatch(SetMovieDetail(detail: detail))
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
         default:
             break
         }

@@ -30,6 +30,7 @@
 		168316452A3F510E00F0DFA3 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316442A3F510E00F0DFA3 /* Todo.swift */; };
 		168316472A3F518900F0DFA3 /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316462A3F518900F0DFA3 /* TaskReducer.swift */; };
 		168316492A3F545500F0DFA3 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168316482A3F545500F0DFA3 /* AddTaskView.swift */; };
+		16E9354D2A471EF400B696B3 /* MoviesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E9354C2A471EF400B696B3 /* MoviesDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		168316442A3F510E00F0DFA3 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		168316462A3F518900F0DFA3 /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
 		168316482A3F545500F0DFA3 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		16E9354C2A471EF400B696B3 /* MoviesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		1646CFC52A46F98900A54574 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				1646CFCA2A46FB4400A54574 /* Services */,
 				1646CFC62A46F9E200A54574 /* Models */,
 				1646CFC72A46F9FA00A54574 /* Store */,
 				1646CFD72A47024F00A54574 /* Views */,
@@ -148,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1646CFDC2A4709DD00A54574 /* MoviesAppView.swift */,
+				16E9354C2A471EF400B696B3 /* MoviesDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,7 +177,6 @@
 			children = (
 				168316282A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift */,
 				1683162C2A3F063600F0DFA3 /* Assets.xcassets */,
-				1646CFCA2A46FB4400A54574 /* Services */,
 				1646CFC42A46F95A00A54574 /* SampleApp */,
 				1646CFC52A46F98900A54574 /* MoviesApp */,
 				1683162E2A3F063600F0DFA3 /* Preview Content */,
@@ -316,6 +319,7 @@
 				1646CFC92A46FA1300A54574 /* Movie.swift in Sources */,
 				168316382A3F08CE00F0DFA3 /* Store.swift in Sources */,
 				1683162B2A3F063500F0DFA3 /* ContentView.swift in Sources */,
+				16E9354D2A471EF400B696B3 /* MoviesDetailView.swift in Sources */,
 				168316292A3F063500F0DFA3 /* SwiftUI_Redux_ArchitectureApp.swift in Sources */,
 				1683163D2A3F17FE00F0DFA3 /* CounterReducer.swift in Sources */,
 				1646CFD62A4701A700A54574 /* MoviesAppReducer.swift in Sources */,

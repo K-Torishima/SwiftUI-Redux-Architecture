@@ -15,5 +15,6 @@ struct MoviesAppState: MoviesReduxState {
 
 struct MoviesState: MoviesReduxState {
     var movies = [Movie]()
+    var selectedMovieDetail: MovieDetail?
     
 }

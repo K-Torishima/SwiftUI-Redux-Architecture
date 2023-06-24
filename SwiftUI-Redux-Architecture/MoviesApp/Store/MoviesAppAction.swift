@@ -16,3 +16,12 @@ struct FetchMovies: MoviesAppAction {
 struct SetMovies: MoviesAppAction {
     let movies: [Movie]
 }
+
+struct FetchMovieDetail: MoviesAppAction {
+    let id: String
+}
+
+struct SetMovieDetail: MoviesAppAction {
+    let detail: MovieDetail
+}
+

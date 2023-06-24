@@ -34,10 +34,26 @@ class Webservice {
                      }
                   """.data(using: .utf8)
     
+    let mockDetailData = """
+                         {
+                            "title": "映画の詳細",
+                            "text": "これは詳細です"
+                         }
+                  """.data(using: .utf8)
+    
     func getMoviesBy(search: String) async throws -> [Movie] {
         do {
             let response = try JSONDecoder().decode(MovieResponse.self, from: mockData!)
             return response.movies
+        } catch {
+            throw error
+        }
+    }
+    
+    func getMoviesDetal(id: String) async throws -> MovieDetail {
+        do {
+            let response = try JSONDecoder().decode(MovieDetail.self, from: mockDetailData!)
+            return response
         } catch {
             throw error
         }
